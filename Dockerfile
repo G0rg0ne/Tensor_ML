@@ -1,5 +1,5 @@
-# Use official Python runtime as base image
-FROM python:3.10-slim
+# Use NVIDIA PyTorch base image with CUDA support
+FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
 
 # Set working directory in container
 WORKDIR /app
