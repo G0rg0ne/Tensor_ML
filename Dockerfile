@@ -1,5 +1,5 @@
-# Use NVIDIA PyTorch base image with CUDA support
-FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
+# Use NVIDIA PyTorch 2.4+ base image (required by current transformers)
+FROM pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime
 
 # Set working directory in container
 WORKDIR /app
